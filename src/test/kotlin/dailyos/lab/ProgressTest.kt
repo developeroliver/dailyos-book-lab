@@ -13,4 +13,9 @@ class ProgressTest {
     fun emptyDayIsZeroPercent() {
         assertEquals(0, completionPercent(done = 0, total = 0))
     }
+
+    @Test
+    fun neverExceedsOneHundred() {
+        assertEquals(100, completionPercent(done = 9, total = 7))
+    }
 }

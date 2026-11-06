@@ -6,3 +6,7 @@ Il sert de terrain d'essai pour les chapitres sur GitHub. Il ne contient que du 
 ## Démarrage
 
     ./gradlew test
+
+## Usage
+
+Voir les tests.

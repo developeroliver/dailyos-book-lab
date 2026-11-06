@@ -18,4 +18,10 @@ class ProgressTest {
     fun neverExceedsOneHundred() {
         assertEquals(100, completionPercent(done = 9, total = 7))
     }
+
+    @Test
+    fun labelsACompletedDay() {
+        assertEquals("Terminé", progressLabel(100))
+        assertEquals("En cours", progressLabel(99))
+    }
 }

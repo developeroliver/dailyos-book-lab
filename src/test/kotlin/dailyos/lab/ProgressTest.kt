@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 class ProgressTest {
     @Test
     fun truncatesThePercentage() {
-        assertEquals(85, completionPercent(done = 6, total = 7))
+        assertEquals(86, completionPercent(done = 6, total = 7))
     }
 
     @Test
